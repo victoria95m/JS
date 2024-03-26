@@ -1,31 +1,32 @@
 body{
    /* background:#fafafa;*/
-    background:white;
+    background:#ECEFF1;
     display: flex;
     justify-content:center;
     position: fixed;
 }
 
 .container-weather{
-    background: #ECEFF1;
+    background:;
     border-radius: 15px;
     padding:100px 100px;
     margin:60px 250px ;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 h1{
-    color: #e85f99;
+    color:#99154C;
     -webkit-text-stroke: 0.9px black;
    /*  text-shadow: 1px 1px 4px black;*/
      text-align: center;
      margin-top:  -15px;
      font-family: 1.2rem "Fira Sans", sans-serif;
 }
+
 .wishes{
     text-align: center;
     font-family: 1.2rem "Fira Sans", sans-serif;
     /* -webkit-text-stroke: 0.9px black;*/
-    color: #e85f99;
+    color:#99154C;
 }
 .author{
     color: #000000;
@@ -35,14 +36,32 @@ h1{
 h2{
     display: flex;
     justify-content:center; 
-    color: #e85f99;
+    color:#99154C;
     font-weight: bold;
     font-style: normal;
     margin-right: 15px; 
     font-family: 1.2rem "Fira Sans", sans-serif;
     -webkit-text-stroke: 0.9px black;
+
+    
+}
+.weather-app-icon {
+    width: 60px; 
+    height: 60px; 
+     margin-top: -17px;
+     margin-bottom: 0px;
+     margin-left: 3px;
+    
+    
 }
 
+/*#icon {
+    z-index: 10; 
+    position: relative; 
+     display: block; 
+    background: #ECEFF1;
+     color: #e85f99;
+}*/
 
 .info-weather{
     text-align: center;
@@ -51,13 +70,13 @@ h2{
 }
 
 .humidity{
-    color: #e85f99;
+    color: #99154C;
     font-weight: bold;
     
 }
 
 .wind-speed{
-    color: #e85f99;
+    color: #99154C;
     font-weight: bold;
 }
 
@@ -99,7 +118,7 @@ font-family: 1.2rem "Fira Sans", sans-serif;
     border-radius: 2px;
 }
 .day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover, .day6:hover {
-    color:#e85f99;
+    color: #99154C;
     margin: 0% auto;
     padding: 0% auto;
     border: 1px solid rgb(66, 57, 148);
@@ -110,7 +129,7 @@ font-family: 1.2rem "Fira Sans", sans-serif;
   font-weight: bold;
   font-style: normal;
   margin-right: 15px;
-  color: #e85f99;
+  color:#99154C;
 }
 .currentMonth{
   font-optical-sizing: auto;
@@ -123,7 +142,7 @@ font-family: 1.2rem "Fira Sans", sans-serif;
   font-weight: bold;
   font-style: normal;
   margin-right: 15px;  
-  color: #e85f99;
+  color:#99154C;
 }
 .dayOfTheWeek{
   font-optical-sizing: auto;
@@ -137,7 +156,7 @@ font-family: 1.2rem "Fira Sans", sans-serif;
   font-weight: bold;
   font-style: normal;
   margin-right: 15px;
-  color: #e85f99;
+  color:#99154C;
 }
 
 .search-container {
@@ -160,7 +179,7 @@ input[type="search"]{
 
 input[type="submit"] {
     color: #ebedec;
-    background-color:#e85f99;
+    background-color:#99154C;
     cursor: pointer;
     border-radius: 3px;
     font-size: 15px;
@@ -182,7 +201,7 @@ footer {
     height: 30%; 
 } 
 a{
-    color: #e85f99;
+    color: #99154C;
     text-decoration: none;
 }
 a:hover{

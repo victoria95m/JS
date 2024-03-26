@@ -27,11 +27,14 @@ function showTemperature(response){
     let descriptionElement = document.querySelector("#description");
     let humidityElement= document.querySelector("#humidity");
     let windSpeedElement= document.querySelector("#wind-speed");
+    let iconElement= document.querySelector("#icon");
     document.querySelector("#myCity").innerHTML = city;
     document.querySelector("#temp").innerHTML = `&nbsp${temperature}°C`;
     descriptionElement.innerHTML=(response.data.condition.description);
     humidityElement.innerHTML=`${Math.round(response.data.temperature.humidity)} %`;
     windSpeedElement.innerHTML=`${(response.data.wind.speed)}km/h`;
+    
+    iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
 function getWeather(city) {
@@ -39,6 +42,7 @@ function getWeather(city) {
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showTemperature).catch(function(error) {
         console.log(error);
+        
     });
 }
 
@@ -47,6 +51,7 @@ function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#search-for-me");
     getWeather(cityInputElement.value);
+
 }
 let form = document.querySelector("#request-city-form");
 form.addEventListener("submit", handleSubmit);
@@ -54,3 +59,4 @@ form.addEventListener("submit", handleSubmit);
 
 
 getWeather("Cunit");
+
