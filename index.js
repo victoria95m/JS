@@ -25,10 +25,13 @@ function showTemperature(response){
     let temperature = Math.round(response.data.temperature.current);
     let city = response.data.city;
     let descriptionElement = document.querySelector("#description");
+    let humidityElement= document.querySelector("#humidity");
+    let windSpeedElement= document.querySelector("#wind-speed");
     document.querySelector("#myCity").innerHTML = city;
     document.querySelector("#temp").innerHTML = `&nbsp${temperature}°C`;
     descriptionElement.innerHTML=(response.data.condition.description);
-
+    humidityElement.innerHTML=`${Math.round(response.data.temperature.humidity)} %`;
+    windSpeedElement.innerHTML=`${(response.data.wind.speed)}km/h`;
 }
 
 function getWeather(city) {
