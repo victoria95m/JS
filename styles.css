@@ -16,19 +16,21 @@ body{
 h1{
     color: #e85f99;
     -webkit-text-stroke: 0.9px black;
-     text-shadow: 1px 1px 4px black;
+   /*  text-shadow: 1px 1px 4px black;*/
      text-align: center;
      margin-top:  -15px;
      font-family: 1.2rem "Fira Sans", sans-serif;
 }
 .wishes{
     text-align: center;
-    font: caption;
     font-family: 1.2rem "Fira Sans", sans-serif;
     /* -webkit-text-stroke: 0.9px black;*/
     color: #e85f99;
 }
-
+.author{
+    color: #000000;
+    font-family: 1.2rem "Fira Sans", sans-serif;
+}
   
 h2{
     display: flex;

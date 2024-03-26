@@ -24,8 +24,11 @@ name.innerHTML= ` <div class="dayOfTheMonth">${date}</div>
 function showTemperature(response){
     let temperature = Math.round(response.data.temperature.current);
     let city = response.data.city;
+    let descriptionElement = document.querySelector("#description");
     document.querySelector("#myCity").innerHTML = city;
     document.querySelector("#temp").innerHTML = `&nbsp${temperature}°C`;
+    descriptionElement.innerHTML=(response.data.condition.description);
+
 }
 
 function getWeather(city) {
