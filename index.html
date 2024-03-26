@@ -6,10 +6,6 @@
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Weather</title>
-    
-    <link rel="shortcut icon" href="images/season.png" type="image/png">
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -23,59 +19,69 @@
   <!-- <video autoplay muted loop id="backgroundVideo" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1;">
         <source src="videos/glacier.mp4" type="video/mp4">
     </video>-->
-    <container>
+   
+    <container class="container-weather">
     <h1>
-       text with motivation 
-      </h1>
+      message for today:
+     </h1>
+      <p class="wishes">You can do it!</p>
+           <!-- <div class="currentTime"><div class="hours">15</div>:<div class="minutes">36</div></div>-->
+     
+      <div>
       <header>
-        <form id="request-city-form">
+        <form class="search-container" id="request-city-form">
         <input type="search" autofocus required placeholder="Enter city" id="search-for-me" />
         <input type="submit" value="search" />
     </form>
+  </div>
       </header>
       <br/>
-      <main><h2><div id="myCity">  </div><div id="temp"></div><img class="imgTermometr" src="" width="25"/>
-      </strong></h2>
-        <br/> 
-        <div class="time-container">
-        <div class="dayOfTheMonth">18</div>
-        <div class="currentMonth">March</div>
-        <div class="currentYear">2024</div>
-            <div class="dayOfTheWeek">Monday</div> 
-        <div class="currentTime"><div class="hours">15</div>:<div class="minutes">36</div></div>
-    </div>
-          <ul class="days">
-              <li class="day1">Tue 
-                <br/>
-                °C
+
+      <main><h2><div id="myCity">  </div><div id="temp"></div>
+      </h2>
+      <div>
+      <ul class="days">
+        <li class="day1">Tue 
+          <br/>
+          °C
+        </li>
+        <li class="day2">Wed
+          <br/>
+          °C
+      </li>
+        <li class="day3">Thu
+          <br/>
+          °C
+      </li>
+        <li class="day4">Fri
+          <br/>
+           °C
+          </li>
+          <li class="day5">Sat
+              <br/>
+               °C
               </li>
-              <li class="day2">Wed
-                <br/>
-                °C
-            </li>
-              <li class="day3">Thu
-                <br/>
-                °C
-            </li>
-              <li class="day4">Fri
-                <br/>
-                 °C
-                </li>
-                <li class="day5">Sat
-                    <br/>
-                     °C
-                    </li>
-                    <li class="day6">Sun
-                        <br/>
-                         °C
-                        </li>
-          </ul>
-            </div>
+              <li class="day6">Sun
+                  <br/>
+                   °C
+                  </li>
+    </ul>
+      </div>
+      <p class="info-weather"> scattered clouds  Humidity: <span class="humidity" id="humidity">66%</span>, Wind: <span class="wind-speed" id="wind-speed">3.13km/h</span> </p>
+      <div class="time-container">
+        <div class="dayOfTheMonth"></div>
+        <div class="currentMonth"></div>
+        <div class="currentYear"></div>
+            <div class="dayOfTheWeek"></div> 
         </main>
     <footer>
         <div class="name">
-        This code was made by <a href="https://www.linkedin.com/in/victoria-milchevska/" target="_blank">Victoria Milchevska</a>
+        This code was coded by
+        <a href="https://github.com/victoria95m" target="_blank">Victoria Milchevska</a> and is
+        <a href="https://github.com/victoria95m/JS" target="_blank"> on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
         </div>
+      </div>
        </footer>
     </container>
     <script src="index.js"></script>

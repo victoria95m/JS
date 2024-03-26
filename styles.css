@@ -1,44 +1,89 @@
 body{
-    background:#fafafa;
-    border: 1px solid #111111;
-    border-radius: 4px;
-    padding:100px 100px;
-    margin:60px 250px ;
+   /* background:#fafafa;*/
+    background:white;
     display: flex;
     justify-content:center;
     position: fixed;
-    }
-  
+}
+
+.container-weather{
+    background: #ECEFF1;
+    border-radius: 15px;
+    padding:100px 100px;
+    margin:60px 250px ;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
 h1{
     color: #fbafaf;
     -webkit-text-stroke: 0.9px black;
      text-shadow: 1px 1px 4px black;
+     text-align: center;
+     margin-top:  -15px;
 }
+.wishes{
+    text-align: center;
+    font: 1.2rem "Fira Sans", sans-serif;
+}
+
 h2{
+    display: flex;
+    justify-content:center; 
+    color: #e85f99;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 15px; 
+}
+
+
+.info-weather{
+    text-align: center;
+    margin-top: 20px;
+    font: 1.2rem "Fira Sans", sans-serif;
+}
+
+.humidity{
+    color: #e85f99;
+    
+}
+
+.wind-speed{
+    color: #e85f99;
+   
+}
+
+/*h2{
     display: flex;
     justify-content:center;
     color:#e85f99;
-    font-family: "Orbitron", sans-serif;
+   font-family: "Orbitron", sans-serif;
     margin: 10px 10px;
-}
 
+}  */
 .time-container {
-    display: flex;
+   display: flex;
    justify-content:center;
-  
-}
+margin-top: 30px;
+
+} 
 .days{
     list-style-type: none;
     display: flex;
-    margin: auto;
-    padding: 10px;
+    /*margin: auto;
+    padding: 10px;*/
     gap: 17px;
+
+    background-color:white;
+    border-radius: 15px;
+    padding:10px 10px;
+    margin:-1px 20px ;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 .day1, .day2, .day3, .day4, .day5, .day6{
     color:#000000;
     margin: 0% auto;
     padding: 0% auto;
-    border: 1px solid#fafafa;
+    border: 1px solid white;
     border-radius: 2px;
 }
 .day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover, .day6:hover {
@@ -49,14 +94,14 @@ h2{
     border-radius: 2px;
 }
 .dayOfTheMonth{
-    color: #4e2222;
+    color: #e85f99;
   font-family: "Black Ops One", system-ui;
   font-weight: 400;
   font-style: normal;
   margin-right: 15px;
 }
 .currentMonth{
-    color:#4e2222;
+    color:#e85f99;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -64,14 +109,14 @@ h2{
   margin-right: 15px;
 }
 .currentYear{
-    color: #4e2222;
+    color: #e85f99;
   font-family: "Black Ops One", system-ui;
   font-weight: 400;
   font-style: normal;
   margin-right: 15px;  
 }
 .dayOfTheWeek{
-    color:#4e2222;
+    color:#e85f99;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -80,47 +125,65 @@ h2{
 }
     
 .currentTime{
-    color: #4e2222;
+    color: #e85f99;
   font-family: "Black Ops One", system-ui;
   font-weight: 400;
   font-style: normal;
   margin-right: 15px;
 }
 
+.search-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
 input[type="search"]{
-    background-color: #d8f4f0;
+    background-color: #ebedec;
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
     width: 70%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 35px;
+ 
 }
 
 
 input[type="submit"] {
-    color: #fafafa;
+    color: #ebedec;
     background-color:#e85f99;
     cursor: pointer;
     border-radius: 3px;
     font-size: 15px;
-    padding:11px;
+    padding:14.5px;
+    margin: 2px;
+    margin-left: 3px;
     border-radius: 5px;
-    line-height: 1;
+   line-height: 1;
     transition:0.4s;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-   
 }
+
+
+
 footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
     height: 30%; 
-}
+} 
 a{
     color: #e85f99;
     text-decoration: none;
 }
 a:hover{
-    color: #1d9484;
+    color: #8a948f;
     text-decoration: underline;
+}
+.name{
+    text-align: center;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   font: 1.2rem "Fira Sans", sans-serif;
 }

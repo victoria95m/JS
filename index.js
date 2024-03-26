@@ -25,7 +25,7 @@ function showTemperature(response){
     let temperature = Math.round(response.data.temperature.current);
     let city = response.data.city;
     document.querySelector("#myCity").innerHTML = city;
-    document.querySelector("#temp").innerHTML = `&nbsp${temperature}ºC`;
+    document.querySelector("#temp").innerHTML = `&nbsp${temperature}°C`;
 }
 
 function getWeather(city) {
@@ -44,3 +44,7 @@ function handleSubmit(event) {
 }
 let form = document.querySelector("#request-city-form");
 form.addEventListener("submit", handleSubmit);
+
+
+
+getWeather("Cunit");
