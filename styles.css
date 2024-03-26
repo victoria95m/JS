@@ -14,42 +14,49 @@ body{
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 h1{
-    color: #fbafaf;
+    color: #e85f99;
     -webkit-text-stroke: 0.9px black;
      text-shadow: 1px 1px 4px black;
      text-align: center;
      margin-top:  -15px;
+     font-family: 1.2rem "Fira Sans", sans-serif;
 }
 .wishes{
     text-align: center;
-    font: 1.2rem "Fira Sans", sans-serif;
+    font: caption;
+    font-family: 1.2rem "Fira Sans", sans-serif;
+    /* -webkit-text-stroke: 0.9px black;*/
+    color: #e85f99;
 }
 
+  
 h2{
     display: flex;
     justify-content:center; 
     color: #e85f99;
-    font-family: "Black Ops One", system-ui;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
     margin-right: 15px; 
+    font-family: 1.2rem "Fira Sans", sans-serif;
+    -webkit-text-stroke: 0.9px black;
 }
 
 
 .info-weather{
     text-align: center;
     margin-top: 20px;
-    font: 1.2rem "Fira Sans", sans-serif;
+    font-family: 1.2rem "Fira Sans", sans-serif;
 }
 
 .humidity{
     color: #e85f99;
+    font-weight: bold;
     
 }
 
 .wind-speed{
     color: #e85f99;
-   
+    font-weight: bold;
 }
 
 /*h2{
@@ -64,6 +71,8 @@ h2{
    display: flex;
    justify-content:center;
 margin-top: 30px;
+font-family: 1.2rem "Fira Sans", sans-serif;
+
 
 } 
 .days{
@@ -78,6 +87,7 @@ margin-top: 30px;
     padding:10px 10px;
     margin:-1px 20px ;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    font-family: 1.2rem "Fira Sans", sans-serif;
 }
 .day1, .day2, .day3, .day4, .day5, .day6{
     color:#000000;
@@ -87,49 +97,45 @@ margin-top: 30px;
     border-radius: 2px;
 }
 .day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover, .day6:hover {
-    color:#1d9484;
+    color:#e85f99;
     margin: 0% auto;
     padding: 0% auto;
     border: 1px solid rgb(66, 57, 148);
     border-radius: 2px;
+    font-family: 1.2rem "Fira Sans", sans-serif;
 }
 .dayOfTheMonth{
-    color: #e85f99;
-  font-family: "Black Ops One", system-ui;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
   margin-right: 15px;
+  color: #e85f99;
 }
 .currentMonth{
-    color:#e85f99;
-  font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
   margin-right: 15px;
+  color:black; 
 }
 .currentYear{
-    color: #e85f99;
-  font-family: "Black Ops One", system-ui;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
   margin-right: 15px;  
+  color: #e85f99;
 }
 .dayOfTheWeek{
-    color:#e85f99;
-  font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
   margin-right: 15px;
+  color:black; 
 }
     
 .currentTime{
-    color: #e85f99;
-  font-family: "Black Ops One", system-ui;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
   margin-right: 15px;
+  color: #e85f99;
 }
 
 .search-container {
@@ -185,5 +191,5 @@ a:hover{
     text-align: center;
    margin-top: 10px;
    margin-bottom: 20px;
-   font: 1.2rem "Fira Sans", sans-serif;
+   font-family:1.2rem "Fira Sans", sans-serif;
 }
