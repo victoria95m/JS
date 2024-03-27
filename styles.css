@@ -20,6 +20,7 @@ h1{
      text-align: center;
      margin-top:  -15px;
      font-family: 1.2rem "Fira Sans", sans-serif;
+     font-size: 270%;
 }
 
 .wishes{
@@ -27,22 +28,24 @@ h1{
     font-family: 1.2rem "Fira Sans", sans-serif;
     /* -webkit-text-stroke: 0.9px black;*/
     color:#99154C;
+    font-size: 135%;
 }
 .author{
     color: #000000;
     font-family: 1.2rem "Fira Sans", sans-serif;
+    font-size: 90%;
 }
   
 h2{
     display: flex;
     justify-content:center; 
     color:#99154C;
-    font-weight: bold;
-    font-style: normal;
+   font-weight: bold;
+    /* font-style: normal;*/
     margin-right: 15px; 
     font-family: 1.2rem "Fira Sans", sans-serif;
     -webkit-text-stroke: 0.9px black;
-
+    font-size: 200%;
     
 }
 .weather-app-icon {
@@ -192,8 +195,14 @@ input[type="submit"] {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
+input[type="submit"]:hover{
+    background-color:#ad225c;  
+    color: #ebedec;
+}
+hr {
+    width: 90%;
+    border-color: rgb(250, 248, 248);
+  }
 footer {
     display: flex;
     flex-direction: column;
@@ -202,11 +211,13 @@ footer {
 } 
 a{
     color: #99154C;
+    
     text-decoration: none;
 }
 a:hover{
-    color: #8a948f;
+    color: #99154C;
     text-decoration: underline;
+    -webkit-text-stroke: 0.9px black;
 }
 .name{
     text-align: center;
