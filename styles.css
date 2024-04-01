@@ -114,21 +114,48 @@ font-family: 1.2rem "Fira Sans", sans-serif;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     font-family: 1.2rem "Fira Sans", sans-serif;
 }
-.day1, .day2, .day3, .day4, .day5, .day6{
+/* .day1, .day2, .day3, .day4, .day5, .day6{
+    color:#000000;
+    margin: 0% auto;
+    padding: 0% auto;
+    border: 1px solid white;
+    border-radius: 2px;
+    
+}
+.day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover, .day6:hover {
+    color: #99154C;
+    margin: 0% auto;
+    padding: 0% auto;
+    border: 1px solid#787b7b;
+    border-radius: 2px;
+    font-family: 1.2rem "Fira Sans", sans-serif;
+    
+}
+*/
+.day1{
+    text-align: center;
     color:#000000;
     margin: 0% auto;
     padding: 0% auto;
     border: 1px solid white;
     border-radius: 2px;
 }
-.day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover, .day6:hover {
+.day1:hover{
+    text-align: center;
     color: #99154C;
     margin: 0% auto;
     padding: 0% auto;
-    border: 1px solid rgb(66, 57, 148);
+    border: 1px solid#787b7b;
     border-radius: 2px;
     font-family: 1.2rem "Fira Sans", sans-serif;
 }
+
+.temp-min{
+    opacity: 0.5;
+}
+
+
+
 .dayOfTheMonth{
   font-weight: bold;
   font-style: normal;
