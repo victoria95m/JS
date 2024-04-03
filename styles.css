@@ -30,18 +30,18 @@ h1{
      font-size: 270%;
 }
 
-.wishes{
+#wishes{
     text-align: center;
     font-family: 1.2rem "Fira Sans", sans-serif;
     /* -webkit-text-stroke: 0.9px black;*/
     color:#99154C;
     font-size: 135%;
 }
-.author{
+/*.author{
     color: #000000;
     font-family: 1.2rem "Fira Sans", sans-serif;
     font-size: 90%;
-}
+}*/
   
 h2{
     display: flex;
@@ -137,7 +137,7 @@ h2{
 }
 
 .info-weather{
- margin-bottom: 200px;
+
     font-family: 1.2rem "Fira Sans", sans-serif;
      
     display: flex;
@@ -165,18 +165,20 @@ h2{
  
 
    
-    margin-top: 150px;
+    
  /*margin-top: 30px;
     display: flex;
     justify-content:center;
- 
+ margin-top: 150px;
+ margin-right: 180px;
+  flex-wrap: nowrap;
  */
  font-family: 1.2rem "Fira Sans", sans-serif;
  display: flex;              
   justify-content: center;    
   align-items: center;        
-  flex-wrap: nowrap;
-margin-right: 180px;
+  
+
  
  } 
 

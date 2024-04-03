@@ -1,3 +1,29 @@
+function misPalabras(){
+ let phrases = ["Chase your dreams, not the money",
+    "Embrace every challenge",
+    "Create, don't wait",
+    "Rise above the storm to find the sunshine",
+    "Be fearless in pursuit of what sets your soul on fire",
+    "Turn obstacles into opportunities",
+    "Stay hungry for success",
+    "Let your passion be your guide",
+    "Dream big, work hard",
+    "Keep pushing, keep striving",
+    "Make today your masterpiece",
+    "Seek progress, not perfection",
+    "Be your own hero",
+    "Turn your can'ts into cans",
+    "Find beauty in the journey",
+    "Elevate your mindset",
+    "Ignite your inner spark",
+    "Define your own success",
+    "Leave a trail of greatness"]
+    
+    let randomIndex = Math.floor(Math.random() * phrases.length)
+    let motivationalWishes = document.querySelector("#wishes");
+    motivationalWishes.innerHTML= phrases[randomIndex];
+
+}
 
 let now = new Date();
 let date = now.getDate(); 
@@ -50,16 +76,16 @@ function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#search-for-me");
     getWeather(cityInputElement.value);
-
+    misPalabras();
 }
 
 
 let form = document.querySelector("#request-city-form");
 form.addEventListener("submit", handleSubmit);
 
+
 getWeather("Cunit");
-
-
+misPalabras();
 
 function showForecast(){
     let days = [ "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
