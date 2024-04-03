@@ -1,3 +1,4 @@
+
 let now = new Date();
 let date = now.getDate(); 
 let months = ["January", "February", "March", "April", "May","June", "July", "August", "September", "October", "November",  "December"];
@@ -21,6 +22,11 @@ name.innerHTML= ` <div class="dayOfTheMonth">${date}</div>
                   <div class="currentTime">${hours}:${minutes}</div>`; 
                   
 
+
+
+
+
+
 function showTemperature(response){
     let temperature = Math.round(response.data.temperature.current);
     let city = response.data.city;
@@ -37,6 +43,13 @@ function showTemperature(response){
     iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
+
+
+
+
+
+
+
 function getWeather(city) {
     let apiKey = `b7c63f07c3aa3tf911f32df107994d0o`;
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -47,16 +60,28 @@ function getWeather(city) {
 }
 
 
+
+
+
+
+
+
 function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#search-for-me");
     getWeather(cityInputElement.value);
 
 }
+
+
+
 let form = document.querySelector("#request-city-form");
 form.addEventListener("submit", handleSubmit);
 
-
-
 getWeather("Cunit");
+
+
+
+
+
 

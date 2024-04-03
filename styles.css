@@ -7,11 +7,18 @@ body{
 }
 
 .container-weather{
-    background:;
-    border-radius: 15px;
+    /*background:;
+   /* border-radius: 15px;
     padding:100px 100px;
-    margin:60px 250px ;
+    margin:60px 250px ;*/
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    
+    background:#fcfdfe;
+    max-width: 600px;
+    margin: 85px 90px;
+    padding: 30px;
+    
+    border-radius: 15px;
 }
 h1{
     color:#99154C;
@@ -66,23 +73,6 @@ h2{
      color: #e85f99;
 }*/
 
-.info-weather{
-    text-align: center;
-    margin-top: 20px;
-    font-family: 1.2rem "Fira Sans", sans-serif;
-   
-}
-
-.humidity{
-    color: #99154C;
-    font-weight: bold;
-    
-}
-
-.wind-speed{
-    color: #99154C;
-    font-weight: bold;
-}
 
 /*h2{
     display: flex;
@@ -92,19 +82,23 @@ h2{
     margin: 10px 10px;
 
 }  */
-.time-container {
-   display: flex;
-   justify-content:center;
-margin-top: 30px;
-font-family: 1.2rem "Fira Sans", sans-serif;
 
-
-} 
-.days{
-    list-style-type: none;
+ 
+.forecast {
     display: flex;
-    /*margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+
+.info-date-temp{
+ 
+     /* display: flex;
+    display: flex;
+    margin: auto;
     padding: 10px;*/
+   text-align: center;
     gap: 17px;
 
     background-color:white;
@@ -113,6 +107,7 @@ font-family: 1.2rem "Fira Sans", sans-serif;
     margin:-1px 20px ;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     font-family: 1.2rem "Fira Sans", sans-serif;
+
 }
 /* .day1, .day2, .day3, .day4, .day5, .day6{
     color:#000000;
@@ -132,15 +127,16 @@ font-family: 1.2rem "Fira Sans", sans-serif;
     
 }
 */
-.day1{
+.info-date-temp{
     text-align: center;
     color:#000000;
     margin: 0% auto;
     padding: 0% auto;
     border: 1px solid white;
     border-radius: 2px;
+   
 }
-.day1:hover{
+.info-date-temp:hover{
     text-align: center;
     color: #99154C;
     margin: 0% auto;
@@ -150,9 +146,56 @@ font-family: 1.2rem "Fira Sans", sans-serif;
     font-family: 1.2rem "Fira Sans", sans-serif;
 }
 
+
+
+
 .temp-min{
     opacity: 0.5;
 }
+
+.info-weather{
+    
+   text-align: center;
+ /*margin-top: 20px;
+ display: flex;
+   justify-content:center;
+ */
+ margin-bottom: 200px;
+    font-family: 1.2rem "Fira Sans", sans-serif;
+           
+  }
+  
+
+.humidity{
+    color: #99154C;
+    font-weight: bold;
+    
+}
+
+.wind-speed{
+    color: #99154C;
+    font-weight: bold;
+}
+
+
+.time-container {
+ 
+
+   
+    margin-top: 150px;
+ /*margin-top: 30px;
+    display: flex;
+    justify-content:center;
+ 
+ */
+ font-family: 1.2rem "Fira Sans", sans-serif;
+ display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  flex-wrap: nowrap;
+margin-right: 180px;
+ 
+ } 
 
 
 
@@ -161,6 +204,7 @@ font-family: 1.2rem "Fira Sans", sans-serif;
   font-style: normal;
   margin-right: 15px;
   color:#99154C;
+  
 }
 .currentMonth{
   font-optical-sizing: auto;
@@ -168,12 +212,14 @@ font-family: 1.2rem "Fira Sans", sans-serif;
   font-style: normal;
   margin-right: 15px;
   color:black; 
+ 
 }
 .currentYear{
   font-weight: bold;
   font-style: normal;
   margin-right: 15px;  
   color:#99154C;
+  
 }
 .dayOfTheWeek{
   font-optical-sizing: auto;
@@ -181,6 +227,7 @@ font-family: 1.2rem "Fira Sans", sans-serif;
   font-style: normal;
   margin-right: 15px;
   color:black; 
+  
 }
     
 .currentTime{
@@ -188,6 +235,7 @@ font-family: 1.2rem "Fira Sans", sans-serif;
   font-style: normal;
   margin-right: 15px;
   color:#99154C;
+  
 }
 
 .search-container {
