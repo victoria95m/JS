@@ -65,23 +65,6 @@ h2{
     
 }
 
-/*#icon {
-    z-index: 10; 
-    position: relative; 
-     display: block; 
-    background: #ECEFF1;
-     color: #e85f99;
-}*/
-
-
-/*h2{
-    display: flex;
-    justify-content:center;
-    color:#e85f99;
-   font-family: "Orbitron", sans-serif;
-    margin: 10px 10px;
-
-}  */
 
  
 .forecast {
@@ -154,27 +137,27 @@ h2{
 }
 
 .info-weather{
-    
-   text-align: center;
- /*margin-top: 20px;
- display: flex;
-   justify-content:center;
- */
  margin-bottom: 200px;
     font-family: 1.2rem "Fira Sans", sans-serif;
-           
+     
+    display: flex;
+    justify-content: center; 
   }
   
 
-.humidity{
+  #humidity{
     color: #99154C;
     font-weight: bold;
+ white-space: nowrap;
+
     
 }
 
-.wind-speed{
+#wind-speed{
     color: #99154C;
     font-weight: bold;
+    white-space: nowrap;
+
 }
 
 
@@ -227,9 +210,7 @@ margin-right: 180px;
   font-style: normal;
   margin-right: 15px;
   color:black; 
-  
 }
-    
 .currentTime{
   font-weight: bold;
   font-style: normal;
@@ -269,6 +250,7 @@ input[type="submit"] {
    line-height: 1;
     transition:0.4s;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 input[type="submit"]:hover{
@@ -288,6 +270,7 @@ input[type="submit"]:hover{
     background-color: #d3d5d4;
     font-family: 1.2rem "Fira Sans", sans-serif;
     margin-top: -20px;
+    text-align-last: center;
 }
 
 
@@ -298,7 +281,6 @@ hr {
 footer {
     display: flex;
     flex-direction: column;
-     flex-end; 
     height: 30%; 
 } 
 a{
