@@ -276,6 +276,14 @@ input[type="submit"]:hover{
 }
 
 
+.weather-forecast-icon{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+
 hr {
     width: 90%;
     border-color: rgb(250, 248, 248);
