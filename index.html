@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Weather</title>
+    <title>SkyWhisper</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -14,19 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
     
+    <link rel="icon" href="image/favicon.png?v=2" type="image/png">
+
 </head>
 <body>
-  <!-- <video autoplay muted loop id="backgroundVideo" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1;">
-        <source src="videos/glacier.mp4" type="video/mp4">
-    </video>-->
-   
     <container class="container-weather">
     <h1>
       SkyWhisper</h1> 
-    
-      <p id="wishes"><strong> </strong> <span class = author></span></p>
-           <!-- <div class="currentTime"><div class="hours">15</div>:<div class="minutes">36</div></div>-->
-          
+      <p id="wishes"><strong> </strong> <span class = author></span></p>  
       <div>
       <header>
         <form class="search-container" id="request-city-form">
@@ -36,9 +31,7 @@
   </div>
       </header>
       <br/>
-
     <main> <h2><div id="myCity"></div><div id="temp"></div><div id="icon">
-   <!--  <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png" class="weather-app-icon"/>-->
     </div> </h2>
     <div id="description">scattered clouds</div>
     <br/>
@@ -62,13 +55,11 @@
           <div class="forecast-date">Tue </div>
           <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"alt="" width="36"/>
           <div class="forecast-temp">
-          <span class=" temp-max">17°</span><span class="temp-min">14°</span>
+          <span class=" temp-max"></span><span class="temp-min"></span>
       </div>
         </div>
       </div>
     </div>
-       
-     
         </main>
     <footer>
       <hr />
@@ -76,7 +67,7 @@
         This code was coded by
         <a href="https://github.com/victoria95m" target="_blank">Victoria Milchevska</a> and is
         <a href="https://github.com/victoria95m/JS" target="_blank"> on GitHub</a> and
-        <a href="#" target="_blank">hosted on Netlify</a>
+        <a href="https://merry-scone-3fe917.netlify.app/" target="_blank">hosted on Netlify</a>
         </div>
       </div>
        </footer>
