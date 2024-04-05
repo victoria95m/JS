@@ -55,7 +55,7 @@ name.innerHTML= ` <div class="dayOfTheMonth">${date}</div>
                     document.querySelector("#myCity").innerHTML = city;
                     document.querySelector("#temp").innerHTML = `&nbsp${temperature}°C`;
                     descriptionElement.innerHTML=(response.data.condition.description);
-                    humidityElement.innerHTML=`${Math.round(response.data.temperature.humidity)} %`;
+                    humidityElement.innerHTML=`${Math.round(response.data.temperature.humidity)}%&nbsp`;
                     windSpeedElement.innerHTML=`${(response.data.wind.speed)}km/h`;
                     iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
                     getForecast(response.data.city);

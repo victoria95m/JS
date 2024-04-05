@@ -6,16 +6,16 @@ body{
 .container-weather{
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     background:#fcfdfe;
-    max-width: 600px;
+    max-width: 550px;
     margin: 85px 90px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
+    
 }
 h1{
     color:#99154C;
     -webkit-text-stroke: 0.9px black;
      text-align: center;
-     margin-top:  -15px;
      font-family: 1.2rem "Fira Sans", sans-serif;
      font-size: 270%;
 }
@@ -30,7 +30,6 @@ h2{
     justify-content:center; 
     color:#99154C;
    font-weight: bold;
-    /* font-style: normal;*/
     margin-right: 15px; 
     font-family: 1.2rem "Fira Sans", sans-serif;
     -webkit-text-stroke: 0.9px black;
@@ -65,7 +64,7 @@ h2{
     margin: 0% auto;
     padding: 0% auto;
     border: 1px solid white;
-    border-radius: 2px; 
+    border-radius: 4px; 
 }
 .info-date-temp:hover{
     text-align: center;
@@ -73,7 +72,7 @@ h2{
     margin: 0% auto;
     padding: 0% auto;
     border: 1px solid#787b7b;
-    border-radius: 2px;
+    border-radius: 4px;
     font-family: 1.2rem "Fira Sans", sans-serif;
 }
 .temp-min{
@@ -188,6 +187,7 @@ input[type="submit"]:hover{
 hr {
     width: 90%;
     border-color: rgb(250, 248, 248);
+    margin-top:25px;
   }
 footer {
     display: flex;
